@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="nav navbar-nav">
+      <div class="col-xs-18">
+          <h2> <b> <i> <u> POSTS </u> </i> </b></h2>
+
+          <ul class="list-group">
+              <PostList *ngFor= "let post of posts"
+                        [title]="post.title"
+                        [content]="post.content"
+                        [loveIts]="post.loveIts"
+                        [created_at]="post.created_at"> <br/>
+              </PostList> 
+          </ul>
+      </div>
+    </div>
+
